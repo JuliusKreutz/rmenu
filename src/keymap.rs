@@ -2,7 +2,6 @@
 // The X11 libraries are available under the MIT license.
 // These bindings are public domain.
 
-#![allow(unused)]
 #![allow(non_upper_case_globals)]
 const XK_BackSpace: u32 = 0xFF08;
 const XK_Return: u32 = 0xFF0D;
