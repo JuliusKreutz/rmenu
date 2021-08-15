@@ -376,6 +376,8 @@ fn ord(x: &parts::Item, y: &parts::Item, search_text: &str) -> std::cmp::Orderin
         std::cmp::Ordering::Less
     } else if !priority_x && priority_y {
         std::cmp::Ordering::Greater
+    } else if !search_text.is_empty() {
+        x.text.len().cmp(&y.text.len())
     } else {
         std::cmp::Ordering::Equal
     }
