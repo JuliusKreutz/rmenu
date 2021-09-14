@@ -340,11 +340,9 @@ fn main() {
 fn get_items() -> std::collections::HashSet<String> {
     env!("PATH")
         .split(':')
-        .filter(|path| std::fs::metadata(path).map_or(false, |metadata| metadata.is_dir()))
-        .flat_map(|path| {
-            std::fs::read_dir(path)
-                .unwrap()
-                .flatten()
+        .flat_map(std::fs::read_dir)
+        .flat_map(|read| {
+            read.flatten()
                 .map(|entry| entry.file_name().into_string().unwrap())
         })
         .collect::<std::collections::HashSet<String>>()
