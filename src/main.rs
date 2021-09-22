@@ -335,7 +335,8 @@ fn main() {
 }
 
 fn get_items() -> std::collections::HashSet<String> {
-    env!("PATH")
+    std::env::var("PATH")
+        .unwrap()
         .split(':')
         .flat_map(std::fs::read_dir)
         .flat_map(|read| {
