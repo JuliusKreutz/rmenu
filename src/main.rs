@@ -251,10 +251,7 @@ fn main() {
         xcb::WINDOW_CLASS_INPUT_OUTPUT as u16,
         screen.root_visual(),
         &[
-            (
-                xcb::CW_EVENT_MASK,
-                xcb::EVENT_MASK_EXPOSURE | xcb::EVENT_MASK_KEY_PRESS,
-            ),
+            (xcb::CW_EVENT_MASK, xcb::EVENT_MASK_KEY_PRESS),
             (xcb::CW_OVERRIDE_REDIRECT, 1),
         ],
     );
