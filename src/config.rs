@@ -10,4 +10,10 @@ pub const HL_COLOR: (f64, f64, f64) = (97. / 255., 175. / 255., 239. / 255.);
 pub const TEXT_COLOR: (f64, f64, f64) = (204. / 255., 204. / 255., 204. / 255.);
 pub const TEXT_HL_COLOR: (f64, f64, f64) = (238. / 255., 238. / 255., 238. / 255.);
 
-pub const PRIORITY_ITEMS: &[&str] = &["discord", "microsoft-edge-dev", "code", "intellij"];
+pub const PRIORITY_ITEMS: &[&str] = &[
+    "discord",
+    "microsoft-edge-dev",
+    "code",
+    "intellij",
+    "thunderbird",
+];
