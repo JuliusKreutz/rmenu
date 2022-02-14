@@ -12,7 +12,7 @@ pub const TEXT_HL_COLOR: (f64, f64, f64) = (238. / 255., 238. / 255., 238. / 255
 
 pub const PRIORITY_ITEMS: &[&str] = &[
     "discord",
-    "microsoft-edge-dev",
+    "microsoft-edge-stable",
     "code",
     "intellij",
     "thunderbird",
