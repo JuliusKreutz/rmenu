@@ -1,4 +1,4 @@
-pub const FONT: &str = "JetBrains Mono 13";
+pub const FONT: &str = "Comic Code Ligatures 13";
 pub const PROMPT: &str = "Run:";
 
 pub const HEIGHT: u16 = 32;
